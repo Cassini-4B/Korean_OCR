@@ -31,8 +31,8 @@ def train_cnn_ocr(trainfolder, valfolder, weights_filename):
 	test_datagen = ImageDataGenerator(rescale=1./255)
 	valid_set = test_datagen.flow_from_directory(valfolder,target_size = (100,100),batch_size = 		34, class_mode = 'categorical')
 
-	return training_set
-	return classifier.save_weights(weights_filename)
+	
+	return training_set, classifier.save_weights(weights_filename)
 
 
 def test_cnn_ocr( weights_filename, testfolder, training_set):
