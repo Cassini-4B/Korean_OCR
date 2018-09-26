@@ -7,7 +7,8 @@ This repository contains machine learning/classification models written in pytho
 OpenCV was also used to generate features by obtaining image moments from contours in each image.  A total of 15 features were used to fit into the classification models:
 1) Area of the contour
 2) Perimeter of the contour
-3-4) Center point of the contour (x and y pixel coordinate)
+3) Center point of the contour (x pixel coordinate)
+4) Center point of the contour (y pixel coordinate
 5) Aspect ratio (width/height of rectangular bounding box)
 6) Radius of bounding circle
 7) Major axis of bounding ellipse
