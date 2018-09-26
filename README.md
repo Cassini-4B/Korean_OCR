@@ -14,8 +14,10 @@ OpenCV was also used to generate features by obtaining image moments from contou
 7) Major axis of bounding ellipse
 8) Minor axis of bounding ellipse
 9) Angle of orientation (angle between major axis and image horizontal)
-10-11) Bottommost point of contour (x, y pixel coordinate)
-12-13) Rightmost point of contour (x, y pixel coordinate)
+10) Bottommost point of contour (x pixel coordinate)
+11) Bottommost point of contour (y pixel coordinate)
+12) Rightmost point of contour (x pixel coordinate)
+13) Rightmost point of contour (y pixel coordinate)
 14) Height of bounding box 
 15) Width of bounding box
 
