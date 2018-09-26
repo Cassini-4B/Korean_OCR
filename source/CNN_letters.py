@@ -23,13 +23,13 @@ def train_cnn_ocr(trainfolder, valfolder, weights_filename):
 	classifier.add(Flatten())
 	classifier.add(Dense(units = 128, activation = 'relu'))
 	classifier.add(Dense(units = 26, activation = 'softmax'))
-	classifier.compile(optimizer = 'adam', loss = 'categorical_crossentropy', metrics = 		['accuracy'])
+	classifier.compile(optimizer = 'adam', loss = 'categorical_crossentropy', metrics = ['accuracy'])
 
 
 	train_datagen = ImageDataGenerator(rescale = 1./255, shear_range = 0.2, zoom_range = 0.2)
-	training_set = train_datagen.flow_from_directory(trainfolder,target_size = (100, 		100),batch_size = 50, class_mode = 'categorical')
+	training_set = train_datagen.flow_from_directory(trainfolder,target_size = (100, 100),batch_size = 50, class_mode = 'categorical')
 	test_datagen = ImageDataGenerator(rescale=1./255)
-	valid_set = test_datagen.flow_from_directory(valfolder,target_size = (100,100),batch_size = 		34, class_mode = 'categorical')
+	valid_set = test_datagen.flow_from_directory(valfolder,target_size = (100,100),batch_size = 34, class_mode = 'categorical')
 
 	
 	return training_set, classifier.save_weights(weights_filename)
