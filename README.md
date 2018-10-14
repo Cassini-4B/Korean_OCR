@@ -24,4 +24,4 @@ OpenCV was also used to generate features by obtaining image moments from contou
 After trying logistic regression, gaussian naive bayes, K nearest neighbors, SVM and Decision Trees/Random Forest, the best model to classify with was Convolutional Neural Nets.  
 
 Also included is the code for a Flask translation app (for handwritten Korean characters) of an image uploaded to the website.
-
+![alt text](https://github.com/Cassini-4B/Korean_OCR/blob/master/koreanocr_flask.png)
